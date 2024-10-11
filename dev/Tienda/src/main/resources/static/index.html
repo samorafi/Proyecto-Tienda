@@ -1,111 +1,12 @@
-<!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{layout/plantilla :: head}">
         <title>TechShop</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="Index.html">TechShop</a>
-            </nav>
-        </header>
-
-        <aside>
-            <h1>Home</h1>
-            <h2>El producto mas vendido</h2>
-            <p>El producto mas vendido del mes pasado fue x2308 relacionado a un servidor</p>
-
-        </aside>
-        <section>
-            <h2>Nuestros Productos</h2>
-            <article>
-                <h2>x2126</h2>
-                <figure>
-                    <img src="https://www.dbtechnologies.com/images/299/7134/180x180/cover/q-100/align-4/VIO-X206-front-no-grille.png"
-                         height="150"                       
-                         alt="Imagen de un Servidor"/>
-                    <figcaption>Servidor de Alto Perfil<a href="#"/>Comprar<a/> </figcaption>
-                </figure>
-                <br/><!-- Espacio en blanco -->
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse
-                    porta, natoque aptent felis urna eu aliquam libero eros cras,
-                    hendrerit conubia habitant dictum est venenatis ac congue.
-                    Penatibus dignissim purus tincidunt a quisque arcu, ultricies
-                    curae tristique aliquet eu odio, rhoncus potenti per nam fusce.
-                    Mi per phasellus ultricies nisl nibh sapien vulputate nulla potenti,
-                    interdum dictumst penatibus ridiculus venenatis tempor donec vestibulum magna platea,
-                    proin sodales litora varius eleifend porttitor aliquam facilisis.
-                    Eros tellus egestas id orci torquent, vulputate ultrices vel vehicula duis,
-                    odio cras curae imperdiet.</p>
-            </article>
-            <article>
-                <h2>x206</h2>
-                <figure>
-                    <img src="https://dbsales.dk/wp-content/uploads/2021/06/VIO-X206-100-left-corner.png"
-                         height="150"                       
-                         alt="Imagen de un Servidor"/>
-                    <figcaption>Servidor de Gama Media<a href="#"/>Comprar<a/> </figcaption>
-                </figure>
-                <br/><!-- Espacio en blanco -->
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse
-                    porta, natoque aptent felis urna eu aliquam libero eros cras,
-                    hendrerit conubia habitant dictum est venenatis ac congue.
-                    Penatibus dignissim purus tincidunt a quisque arcu, ultricies
-                    curae tristique aliquet eu odio, rhoncus potenti per nam fusce.
-                    Mi per phasellus ultricies nisl nibh sapien vulputate nulla potenti,
-                    interdum dictumst penatibus ridiculus venenatis tempor donec vestibulum magna platea,
-                    proin sodales litora varius eleifend porttitor aliquam facilisis.
-                    Eros tellus egestas id orci torquent, vulputate ultrices vel vehicula duis,
-                    odio cras curae imperdiet.</p>
-            </article>
-            <article>
-                <table border="2" cellspacing="1">
-                    <thead>
-                        <tr>
-                            <th>Numero ID</th>
-                            <th>Codigo</th>
-                            <th>Descripcion</th>
-                            <th>Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>ABC</td>
-                            <td>Servidor de Alto Perfil</td>
-                            <td>350.000</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>CBD</td>
-                            <td>Servidor de Bajo Perfil</td>
-                            <td>200.00</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>MDS</td>
-                            <td>Servidor Gama Media</td>
-                            <td>275.000</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>EFR</td>
-                            <td>Computador</td>
-                            <td>450.000</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </article>
-        </section>
-        <footer>
-            <p>Derechos reservados TechShop</p>
-        </footer>
+        <header th:replace="~{layout/plantilla :: header}"></header>
+        <footer th:replace="~{layout/plantilla :: footer}"></footer>
+        
     </body>
 </html>
