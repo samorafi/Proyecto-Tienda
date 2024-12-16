@@ -86,13 +86,14 @@ public class ProjectConfig implements WebMvcConfigurer {
                 .requestMatchers(
                         "/producto/listado",
                         "/categoria/listado",
-                        "/usuario/listado"
+                        "/usuario/listado","/usuario/guardar"
                 ).hasAnyRole("ADMIN", "VENDEDOR")
                 .requestMatchers("/facturar/carrito")
                 .hasRole("USER")
                 )
                 .formLogin((form) -> form
-                .loginPage("/login").permitAll())
+                .loginPage("/login").permitAll()
+                .defaultSuccessUrl("/index", true)) // Redirige siempre a /index tras login exitoso
                 .logout((logout) -> logout.permitAll());
         return http.build();
     }
