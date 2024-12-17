@@ -52,6 +52,46 @@
                             <i class='fas fa-download'></i><i class='fas fa-file-csv'></i>
                         </a>
                     </div>
+                </div>     
+
+                <div class="card">
+                    <div class="card-header text-center">
+                        Reporte Facturas
+                    </div>
+                    <div class="card-body">
+                        <a th:href="@{/reportes/facturas?tipo=vPdf}" class="btn btn-primary">
+                            <i class='fas fa-eye'></i><i class='fas fa-file-pdf'></i>
+                        </a>
+                        <a th:href="@{/reportes/facturas?tipo=Pdf}" class="btn btn-success">
+                            <i class='fas fa-download'></i><i class='fas fa-file-pdf'></i>
+                        </a>
+                        <a th:href="@{/reportes/facturas?tipo=Xls}" class="btn btn-warning">
+                            <i class='fas fa-download'></i><i class='fas fa-file-excel'></i>
+                        </a>
+                        <a th:href="@{/reportes/facturas?tipo=Csv}" class="btn btn-danger">
+                            <i class='fas fa-download'></i><i class='fas fa-file-csv'></i>
+                        </a>
+                    </div>
+                </div>   
+
+                <div class="card">
+                    <div class="card-header text-center">
+                        Reporte Inventario
+                    </div>
+                    <div class="card-body">
+                        <a th:href="@{/reportes/inventario?tipo=vPdf}" class="btn btn-primary">
+                            <i class='fas fa-eye'></i><i class='fas fa-file-pdf'></i>
+                        </a>
+                        <a th:href="@{/reportes/inventario?tipo=Pdf}" class="btn btn-success">
+                            <i class='fas fa-download'></i><i class='fas fa-file-pdf'></i>
+                        </a>
+                        <a th:href="@{/reportes/inventario?tipo=Xls}" class="btn btn-warning">
+                            <i class='fas fa-download'></i><i class='fas fa-file-excel'></i>
+                        </a>
+                        <a th:href="@{/reportes/inventario?tipo=Csv}" class="btn btn-danger">
+                            <i class='fas fa-download'></i><i class='fas fa-file-csv'></i>
+                        </a>
+                    </div>
                 </div>                
                 <div class="card">
                     <div class="card-header text-center">
@@ -101,6 +141,29 @@
                                             <i class='fas fa-download'></i><i class='fas fa-file-csv'></i>
                                         </button>
                                     </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header text-center">
+                        Buscar factura
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h4>Buscar factura</h4>
+                        </div>
+                        <div class="card-body">
+                            <form method="GET" th:action="@{/reportes/facturaPorId}" class="mt-3">
+                                <div class="mb-3">
+                                    <label for="facturaId">Buscar Factura por ID</label>
+                                    <input type="number" class="form-control" name="facturaId" placeholder="Ingrese el ID de factura" required />
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" name="tipo" value="Pdf" class="btn btn-primary">
+                                        <i class="fas fa-file-pdf"></i> Ver Factura
+                                    </button>
                                 </div>
                             </form>
                         </div>
